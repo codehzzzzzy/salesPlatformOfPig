@@ -43,7 +43,7 @@ create table `order`(
     order_time    datetime     default CURRENT_TIMESTAMP not null comment '下单时间',
     user_id      bigint(20)    NOT NULL COMMENT '下单用户',
     weight       DECIMAL(8,2)  NOT NULL COMMENT '购买斤数',
-    updateTime   datetime      default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
+    update_time   datetime      default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment '更新时间',
     status       int(11)       NOT NULL DEFAULT '1' COMMENT '订单状态 1待付款，2待派送，3已派送，4已完成，5已取消',
     `method`     tinyint       NOT NULL COMMENT '支付方式 1微信，2支付宝',
     order_price   DECIMAL(8,2)                            not null comment '订单总价',

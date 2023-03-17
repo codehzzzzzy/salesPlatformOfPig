@@ -11,7 +11,7 @@
             <result property="orderTime" column="order_time" jdbcType="TIMESTAMP"/>
             <result property="userId" column="user_id" jdbcType="BIGINT"/>
             <result property="weight" column="weight" jdbcType="DECIMAL"/>
-            <result property="updatetime" column="updateTime" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_Time" jdbcType="TIMESTAMP"/>
             <result property="status" column="status" jdbcType="INTEGER"/>
             <result property="method" column="method" jdbcType="TINYINT"/>
             <result property="orderPrice" column="order_price" jdbcType="DECIMAL"/>

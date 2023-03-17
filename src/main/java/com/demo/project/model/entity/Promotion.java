@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import java.io.Serializable;
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 import lombok.Data;
 
@@ -30,12 +31,12 @@ public class Promotion implements Serializable {
     /**
      * 开始时间
      */
-    private Date startTime;
+    private LocalDate startTime;
 
     /**
      * 结束时间
      */
-    private Date endTime;
+    private LocalDate endTime;
 
     /**
      * 创建人
