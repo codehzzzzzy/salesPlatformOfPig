@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.demo.project.mapper.ProductMapper">
+
+    <resultMap id="BaseResultMap" type="com.demo.project.model.entity.Product">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="weight" column="weight" jdbcType="DECIMAL"/>
+            <result property="price" column="price" jdbcType="DECIMAL"/>
+            <result property="url" column="url" jdbcType="VARCHAR"/>
+            <result property="createUser" column="create_user" jdbcType="BIGINT"/>
+            <result property="inventory" column="inventory" jdbcType="DECIMAL"/>
+            <result property="updateUser" column="update_user" jdbcType="BIGINT"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="productDay" column="product_day" jdbcType="TIMESTAMP"/>
+            <result property="shelfLife" column="shelf_life" jdbcType="VARCHAR"/>
+            <result property="sales" column="sales" jdbcType="DECIMAL"/>
+            <result property="isDeleted" column="is_deleted" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,name,description,
+        weight,price,url,
+        create_user,inventory,update_user,
+        create_time,update_time,product_day,
+        shelf_life,sales,is_deleted
+    </sql>
+</mapper>
