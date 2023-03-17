@@ -1,7 +1,10 @@
 package com.demo.project.service;
 
+import com.demo.project.model.dto.product.ProductAddRequest;
 import com.demo.project.model.entity.Product;
 import com.baomidou.mybatisplus.extension.service.IService;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
 * @author hzzzzzy
@@ -10,4 +13,13 @@ import com.baomidou.mybatisplus.extension.service.IService;
 */
 public interface ProductService extends IService<Product> {
 
+
+    /**
+     * 添加商品
+     *
+     * @param productAddRequest
+     * @param request
+     * @return
+     */
+    Long addProduct(ProductAddRequest productAddRequest, HttpServletRequest request);
 }
